@@ -8,6 +8,7 @@ module.exports = {
   theme: {
     screens: {
       mp: { min: "0px", max: "768px" },
+      gridMp: { min: "0px", max: "1098px" },
       pc: { min: "768px" },
       sm: "640px",
       // => @media (min-width: 640px) { ... }

@@ -12,6 +12,14 @@ export default function NavLink({
   link: string;
 }) {
   const [activeSection, setActiveSection] = useState<string | null>(null);
+
+  const nameValue = () => {
+    return name.split(" ")[0];
+  };
+  console.log(
+    "🚀 ~ file: NavItems.tsx:17 ~ nameValue ~ nameValue:",
+    nameValue()
+  );
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -29,16 +37,23 @@ export default function NavLink({
 
     return () => observer.disconnect();
   }, []);
+  console.log("🚀 ~ file: NavItems.tsx:15 ~ activeSection:", activeSection);
 
-  const isActive = activeSection === name;
+  const isActive = activeSection === nameValue();
 
   return (
-    <Link href={link}>
-      <div className="rotate-[-90deg]">
-        <li className="whitespace-nowrap">{name}</li>
+    <Link className=" h-10 " href={link}>
+      <div className="rotate-[-90deg] ">
+        <li className="whitespace-nowrap transition-all duration-300  hover:text-[#9caea1]">
+          {name === "about"
+            ? "about me"
+            : name === "contact"
+            ? "contact me"
+            : name}
+        </li>
 
         <div
-          className={`w-9 h-1 transition-colors duration-300 ${
+          className={`w-9 h-1 transition-colors duration-300  ${
             isActive ? " bg-black dark:bg-white" : "bg-transparent"
           }`}
         ></div>

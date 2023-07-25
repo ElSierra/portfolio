@@ -1,18 +1,18 @@
-import { VT323 } from "next/font/google";
-import NavLink from "./NavItems";
-import "./typewriter.css";
+"use client";
 
-import { hats } from "@/app/components/constants/hats";
+
+import { hats, lang } from "@/app/components/constants/hats";
 import TypeWriter from "@/app/components/global/TypeWriter";
 import NavBar from "@/app/components/NavBar";
+import LanguageAnimate from "@/app/components/global/LanguageAnimate";
 
+import AnimatedSection from "../AnimateSection";
 
 
 export default function Main() {
+
   return (
-    <section
-      id={"home"}
-      className="h-[100vh] snap-start  mp:h-[100dvh] flex flex-col w-full items-center px-20 mp:p-5 "
+    <AnimatedSection id="home"
     >
       <NavBar />
       <div className="flex flex-row  w-full h-[70%]">
@@ -21,9 +21,9 @@ export default function Main() {
         >
           <h1 className="text-center  mp:text-left">{"{Ojo Isaac}"}</h1>
           <TypeWriter hats={hats} />
-          
+          <LanguageAnimate language={lang} />
         </div>
       </div>
-    </section>
+    </AnimatedSection>
   );
 }

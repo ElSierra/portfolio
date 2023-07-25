@@ -40,7 +40,7 @@ export default function TypeWriter({
 
           return hatIndex;
         });
-      }, 1100);
+      }, fontSize?650: 1100);
 
       setTimeout(() => {
         setCollapseClass(" w-full");
@@ -50,7 +50,7 @@ export default function TypeWriter({
     const id = setInterval(incrementHat, 4000);
 
     return () => clearInterval(id);
-  }, []); //  eslint-disable-line react-hooks/exhaustive-deps
+  }, [fontSize, hats.length]); 
 
   return (
     <div className={className}>

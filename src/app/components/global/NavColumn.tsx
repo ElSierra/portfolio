@@ -7,8 +7,8 @@ export default function NavColumn() {
       <ul className="flex flex-col gap-20">
         <NavLink name="home" link="#home" />
         <NavLink name="projects" link="#projects" />
-        <NavLink name="about me" link="#project" />
-        <NavLink name="contact me" link="#project" />
+        <NavLink name="about" link="#about" />
+        <NavLink name="contact" link="#project" />
       </ul>
     </div>
   );

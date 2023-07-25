@@ -1,3 +1,4 @@
+import About from "./section/About";
 import Main from "./section/Main";
 import PersonalProjects from "./section/PersonalProjects";
 
@@ -7,6 +8,7 @@ export default function Home() {
       <Main />
       <div className="h-[1px] bg-slate-400 w-full" />
       <PersonalProjects />
+      <About/>
     </main>
   );
 }
