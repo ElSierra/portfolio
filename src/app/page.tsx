@@ -1,5 +1,5 @@
-import Main from "./components/NavScreen";
-import PersonalProjects from "./components/PersonalProjects";
+import Main from "./section/Main";
+import PersonalProjects from "./section/PersonalProjects";
 
 export default function Home() {
   return (

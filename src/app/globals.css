@@ -25,3 +25,13 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+ 
+@layer base {
+  html {
+    -webkit-tap-highlight-color: transparent;
+  }
+  /* * {
+    outline: solid 1px red;
+} */
+}
