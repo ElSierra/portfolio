@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 
-export default function TypeWriter({
+function TypeWriter({
   appendClass,
   hats,
   prefix,
@@ -66,3 +66,4 @@ export default function TypeWriter({
     </div>
   );
 }
+export default React.memo(TypeWriter)

@@ -12,9 +12,11 @@ const boxVariant = {
 export default function AnimatedSection({
   id,
   children,
+  className,
 }: {
   id: string;
   children: ReactNode;
+  className?: string
 }) {
   const control = useAnimation();
 
@@ -52,7 +54,7 @@ export default function AnimatedSection({
       initial="hidden"
       animate={control}
       id={id}
-      className="h-[100vh] snap-start flex flex-col w-full items-center px-28 mp:p-8 pc:pt-5 "
+      className={`h-[100vh] snap-start flex flex-col w-full items-center px-28 mp:p-8 pc:pt-5 ${className}`}
     >
       {children}
     </motion.section>
