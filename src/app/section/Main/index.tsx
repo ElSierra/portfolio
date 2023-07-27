@@ -17,7 +17,7 @@ export default function Main() {
       <NavBar />
       <div className="flex flex-row  w-full h-[70%]">
         <div
-          className={` w-full  flex mp:items-start mp:pl-9 items-center flex-col justify-center text-6xl  `}
+          className={` w-full  flex mp:items-start items-center flex-col justify-center text-6xl  `}
         >
           <h1 className="text-center  mp:text-left">{"{Ojo Isaac}"}</h1>
           <TypeWriter hats={hats} />

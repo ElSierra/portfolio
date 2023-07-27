@@ -42,9 +42,9 @@ export default function NavLink({
   const isActive = activeSection === nameValue();
 
   return (
-    <Link className=" h-10 " href={link}>
+    <Link className="" href={link}>
       <div className="rotate-[-90deg] ">
-        <li className="whitespace-nowrap transition-all duration-300  hover:text-[#9caea1]">
+        <li className="whitespace-nowrap w-9 transition-all duration-300  hover:text-[#9caea1]">
           {name === "about"
             ? "about me"
             : name === "contact"
@@ -53,7 +53,7 @@ export default function NavLink({
         </li>
 
         <div
-          className={`w-9 h-1 transition-colors duration-300  ${
+          className={`w-6 h-[2px] transition-colors duration-300  ${
             isActive ? " bg-black dark:bg-white" : "bg-transparent"
           }`}
         ></div>

@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Experience() {
   return (
-    <div className="border-[1px] h-40 rounded-md p-4">
+    <div className="border-[1px] w-[33%] mp:w-full h-40 rounded-md p-4">
       <div className="h-full w-full gap-4 flex">
         <div className="bg-[#bfbfbf] w-[0.13rem]" />
         <div className="flex h-full flex-col">

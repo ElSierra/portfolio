@@ -22,13 +22,13 @@ export default function PersonalProjects() {
           <Card />
           <Card />
         </div>
-
-        <button className="p-4 transition-all duration-300  hover:text-[#9caea1] cursor-pointer">
-        <p>show more projects</p>
-        <div className={"w-10 h-1  bg-black dark:bg-white"} />
-      </button>
+        <div className="flex justify-center w-full">
+          <button className="p-4 transition-all duration-300  hover:text-[#9caea1] cursor-pointer">
+            <p>show more projects</p>
+            <div className={"w-10 h-1  bg-black dark:bg-white"} />
+          </button>
+        </div>
       </div>
-      
     </AnimatedSection>
   );
 }

@@ -87,7 +87,7 @@ export default function GoUp() {
       variants={boxVariant}
       initial="hidden"
       animate={control}
-      className="absolute bottom-20 right-10 mp:bottom-2 mp:right-2"
+      className="absolute bottom-0 right-0 px-4 py-8 z-50 mp:bottom-2 mp:right-2"
     >
    <ArrowCircleUp size="32"/>
     </motion.a>

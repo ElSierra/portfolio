@@ -54,7 +54,7 @@ function TypeWriter({
 
   return (
     <div className={className}>
-      <div className={`flex gap-2 text-6xl mp:text-3xl ${fontSize}  mx-auto`}>
+      <div className={`flex gap-2 text-6xl mp:text-2xl  md:text-sm  mx-auto`}>
         <div className="shrink-0 whitespace-nowrap ml-auto">
           {prefix}
           {hats[currentHat].prep ? ` ${hats[currentHat].prep} ` : ""}
