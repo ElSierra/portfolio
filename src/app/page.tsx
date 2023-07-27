@@ -4,6 +4,7 @@ import Main from "./section/Main";
 import PersonalProjects from "./section/PersonalProjects";
 import GoUp from "./components/global/GoUp";
 import Resume from "./section/Resume";
+import Contact from "./section/Contact";
 
 export default function Home() {
   return (
@@ -16,6 +17,8 @@ export default function Home() {
       <About/>
       <div className="h-[1px] bg-slate-100  dark:bg-gray-900  w-full" />
       <Resume/>
+      <div className="h-[1px] bg-slate-100  dark:bg-gray-900  w-full" />
+      <Contact/>
     </main>
   );
 }

@@ -10,6 +10,7 @@ import { experienceList } from "@/app/data/experience";
 
 export default function Resume() {
     const ed = educationList.reverse()
+    const exp = experienceList.reverse()
   return (
     <AnimatedSection id="resume">
       <div className="flex w-full  justify-end">
@@ -20,7 +21,7 @@ export default function Resume() {
       </div>
       <div className="flex p-2  h-full w-full mp:flex-wrap overflow-y-scroll masked-overflow no-scrollbar ">
         <Timeline data={ed} timeLineType="Education" />
-        <Timeline data={experienceList} timeLineType="Experience" />
+        <Timeline data={exp} timeLineType="Experience" />
       </div>
     </AnimatedSection>
   );

@@ -57,6 +57,7 @@ export default function AnimatedSection({
       className={`h-[100vh] snap-start flex flex-col w-full items-center px-28 mp:p-8 pc:pt-5 ${className}`}
     >
       {children}
+      
     </motion.section>
   );
 }

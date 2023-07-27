@@ -19,7 +19,7 @@ export default function Main() {
         <div
           className={` w-full  flex mp:items-start items-center flex-col justify-center text-6xl  `}
         >
-          <h1 className="text-center  mp:text-left">{"{Ojo Isaac}"}</h1>
+          <h1 className="text-center mp:text-5xl  mp:text-left">{"{Isaac Ojo}"}</h1>
           <TypeWriter hats={hats} />
           <LanguageAnimate language={lang} />
         </div>
