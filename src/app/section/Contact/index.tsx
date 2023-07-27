@@ -48,14 +48,15 @@ export default function Contact() {
           </a>
         </ul>
       </div>
-
-      <div className="flex pb-20 items-center justify-between w-full ">
-        <div className="border-2 border-black p-1 rounded-md dark:border-white">
-          <h1 className={`text-3xl font-extrabold  dark:text-white`}>IOI</h1>
-        </div>
-        <p>
-          coded by <span className="font-bold">me</span>
-        </p>
+  
+        <div className="flex mp:mb-[80px] pc:mb-[50px] items-center  justify-between w-full ">
+          <div className="border-2 border-black p-1 rounded-md dark:border-white">
+            <h1 className={`text-3xl font-extrabold  dark:text-white`}>IOI</h1>
+          </div>
+          <p>
+            coded by <span className="font-bold">me</span>
+          </p>
+     
       </div>
     </AnimatedSection>
   );
