@@ -1,7 +1,7 @@
 import Image from "next/image";
 import FrameworkTag from "./FrameworkTag";
 import { IpersonalProject } from "../../../../../types/types";
-import { ProjectTags } from "@prisma/client";
+
 
 export default function Card({imageUri,title,desc, subtitle,sourceCode,livePreviewLink,projectTags}: IpersonalProject) {
   return (
