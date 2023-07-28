@@ -33,7 +33,7 @@ export default function Main() {
         alt=""
         height={30}
         width={30}
-        className="animate-icon absolute bottom-20 z-50  mp:top-40 left-80"
+        className="animate-icon absolute bottom-20 z-50  mp:bottom-40 left-80"
       />
       <div className="flex flex-row  w-full h-[70%]">
         <div

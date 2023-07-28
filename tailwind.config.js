@@ -8,8 +8,11 @@ module.exports = {
   theme: {
     screens: {
       mp: { min: "0px", max: "768px" },
+      mpX: { min: "0px", max: "860px" },
+      mpXz: { min: "0px", max: "860px" },
       smp: { min: "0px", max: "350px" },
       gridMp: { min: "0px", max: "1098px" },
+      mdP:{min: "1088px",max: "1400px"},
       pc: { min: "768px" },
       sm: "640px",
       // => @media (min-width: 640px) { ... }

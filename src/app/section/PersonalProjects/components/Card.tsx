@@ -5,9 +5,9 @@ import { IpersonalProject } from "../../../../../types/types";
 
 export default function Card({imageUri,title,desc, subtitle,sourceCode,livePreviewLink,projectTags}: IpersonalProject) {
   return (
-    <div className="flex mb-4 w-full gridMp:flex-wrap gap-6 mb:ml-[20px] items-center">
-      <div className=" pc:min-w-[300px] pc:w-[300px] w-full flex-col  bg-[#f9f9f9] dark:bg-[#262626] rounded-lg pc:h-56 hover:cursor-pointer h-56 flex justify-between p-4 items-center">
-        <div className="aspect-video pc:h-36 w-[90%] duration-500 transition-all hover:w-full pc:hover:h-40 relative ">
+    <div className="flex mb-4 w-full gridMp:flex-wrap mdP:flex-wrap gap-6 items-center">
+      <div className=" w-[300px] mpX:w-full flex-col pc:min-w-[300px]  bg-[#f9f9f9] dark:bg-[#262626] rounded-lg pc:h-56 hover:cursor-pointer h-48 flex justify-between p-4 mp:p-2 items-center">
+        <div className="h-40 pc:max-h-[130px] pc:min-h-[130px] w-[90%] mp:w-[100%] duration-500 transition-all hover:w-full  relative ">
           <Image
             src={imageUri}
             alt={title}

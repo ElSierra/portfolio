@@ -1,16 +1,29 @@
-
-
 import "./overflow.css";
 import AnimatedSection from "../AnimateSection";
 import Timeline from "./components/Timeline";
-import TimelineHead from "./components/TimelineHead";
-import { Book } from "iconsax-react";
-import { educationList } from "@/app/data/educationList";
-import { experienceList } from "@/app/data/experience";
+import { prisma } from "../../../../lib/prisma";
 
-export default function Resume() {
-    const ed = educationList.reverse()
-    const exp = experienceList.reverse()
+export default async function Resume() {
+  const getEducation = async () => {
+    const ed = await prisma.educationExperience.findMany({
+      orderBy: {
+        dateRange: "desc",
+      },
+    });
+
+    return ed;
+  };
+  const getWorkEXP = async () => {
+    const work = await prisma.workExperience.findMany({
+      orderBy: {
+        createdAt: "desc",
+      },
+    });
+
+    return work;
+  };
+  const ed = await getEducation();
+  const exp = await getWorkEXP();
   return (
     <AnimatedSection id="resume">
       <div className="flex w-full  justify-end">

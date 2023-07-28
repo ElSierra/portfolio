@@ -38,7 +38,7 @@ export default async function PersonalProjects() {
         </div>
       </div>
       <div className="overflow-y-scroll masked-overflow no-scrollbar h-full">
-        <div className="grid grid-cols-2  gap-4 mp:grid-cols-1 ">
+        <div className="grid grid-cols-2  gap-4 mpX:grid-cols-1 ">
           {projectData.map((project) => (
             <Card
               {...project}

@@ -4,7 +4,7 @@ import { Code1, Code, JavaScript, Js, Mobile, MobileProgramming, Global } from '
 
 export default function ExpertiseList({className}:{className:string}) {
   return (
-    <div className={`flex   mp:gap-0  gap-6 justify-between mp:flex-wrap ${className}`}>
+    <div className={`flex pc:h-28  mp:gap-0 w-full pc:overflow-x-auto no-scrollbar gap-6 justify-between mp:flex-wrap ${className}`}>
             <Expertise
           Icon={JavaScript}
           header={"Typescript"}
