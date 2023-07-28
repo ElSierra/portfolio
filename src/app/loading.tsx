@@ -1,7 +1,7 @@
 import { ArrowCircleUp } from "iconsax-react";
 import About from "./section/About";
 import Main from "./section/Main";
-import PersonalProjects from "./section/PersonalProjects";
+import PersonalProjects from "./section/PersonalProjects/loading";
 import GoUp from "./components/global/GoUp";
 import Resume from "./section/Resume";
 import Contact from "./section/Contact";

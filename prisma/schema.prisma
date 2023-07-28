@@ -6,6 +6,58 @@ generator client {
 }
 
 datasource db {
-  provider = "postgresql"
+  provider = "mongodb"
   url      = env("DATABASE_URL")
+}
+
+model Isaac {
+  id String @id @default(auto()) @map("_id") @db.ObjectId
+  cv String
+}
+
+model PersonalProjects {
+  id              String                         @id @default(auto()) @map("_id") @db.ObjectId
+  title           String
+  subtitle        String?
+  livePreviewLink String?
+  sourceCode      String
+  imageUri        String
+  desc            String
+  projectTags     ProjectTagsOnPersonalProject[]
+  createdAt       DateTime                       @default(now())
+  updatedAt       DateTime                       @updatedAt
+}
+
+model Experience {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  dateRange String
+  title     String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model ProjectTags {
+  id    String @id @default(auto()) @map("_id") @db.ObjectId
+  title String @unique
+
+  personalProject ProjectTagsOnPersonalProject[]
+  createdAt       DateTime                       @default(now())
+  updatedAt       DateTime                       @updatedAt
+}
+
+model ProjectTagsOnPersonalProject {
+  id            String           @id @default(auto()) @map("_id") @db.ObjectId
+  project       PersonalProjects @relation(fields: [projectId], references: [id])
+  projectId     String           @db.ObjectId
+  tags          ProjectTags      @relation(fields: [projectTagsId], references: [id])
+  projectTagsId String           @db.ObjectId
+  createdAt     DateTime         @default(now())
+  updatedAt     DateTime         @updatedAt
+}
+
+model NotableExperiences {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  title     String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 }

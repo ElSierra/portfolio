@@ -2,32 +2,11 @@ import Card from "./components/Card";
 import "./overflow.css";
 import AnimatedSection from "../AnimateSection";
 import { prisma } from "../../../../lib/prisma";
+import Skeleton from "react-loading-skeleton";
+import "react-loading-skeleton/dist/skeleton.css";
 
-export default async function PersonalProjects() {
-  const getProjects = async () => {
-    const projectData = await prisma.personalProjects.findMany({
-      include: {
-        projectTags: {
-          select: {
-            tags: {
-              select: {
-                id: true,
-                title: true,
-              },
-            },
-          },
-        },
-      },
-      orderBy: {
-        createdAt: "desc",
-      },
-    });
-
-    return projectData;
-  };
-
-  const projectData = await getProjects();
- 
+export default  function PersonalProjects() {
+  
   return (
     <AnimatedSection id="projects">
       <div className="flex w-full  justify-end">
@@ -38,13 +17,8 @@ export default async function PersonalProjects() {
       </div>
       <div className="overflow-y-scroll masked-overflow no-scrollbar h-full">
         <div className="grid grid-cols-2  gap-4 mp:grid-cols-1 ">
-          {projectData.map((project) => (
-            <Card
-              {...project}
-              projectTags={project.projectTags}
-              key={project.id}
-            />
-          ))}
+          <Skeleton height={200}/>
+          <Skeleton height={200} />
         </div>
         <div className="flex justify-center w-full">
           <button className="p-4 transition-all duration-300  hover:text-[#9caea1] cursor-pointer">

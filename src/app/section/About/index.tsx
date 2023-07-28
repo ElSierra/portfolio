@@ -21,8 +21,6 @@ export default function About() {
         </div>
       </div>
       <div className="mp:h-[100vh]  flex mp:flex-col gap-4  masked-overflow no-scrollbar overflow-y-scroll">
-        
-       
         <div className="w-[40%] mp:w-full flex items-center justify-center">
           <div
             className="relative h-48 w-48 transition-all duration-300 hover:w-64 hover:h-64"
@@ -42,40 +40,48 @@ export default function About() {
             />
           </div>
         </div>
-          <div className="flex justify-between flex-col mp:w-full">
-            <h1 className="text-2xl">Isaac Ojo </h1>
-            <p>
-              Hi, I’m Isaac Ojo, a fullstack developer with a knack for building
-              awesome web and mobile apps. I use node.js, next.js, react,
-              typescript, and react native to create solutions that are fast,
-              beautiful, and reliable. I love learning new things and tackling
-              new problems. I also enjoy working with other developers and
-              sharing what I know. Whether it’s a personal project or a
-              professional one, I always strive to deliver quality and value.
-            </p>
-            <div className="flex gap-2 mt-4">
-              <a  className="w-fit transition-all duration-300  hover:text-[#9caea1] cursor-pointer" target="_blank" href="https://github.com/elsierra">
-                Github
-                <div className="w-5  h-[2px] bg-black dark:bg-white"/>
-              </a>
-              <a className="w-fit transition-all duration-300  hover:text-[#9caea1] cursor-pointer" target="_blank" href="mailto:hojoisaac@gmail.com">
-                Email
-                <div className="w-5 h-[2px] bg-black dark:bg-white"/>
-              </a>
-              <button className="w-fit transition-all duration-300  hover:text-[#9caea1] cursor-pointer">
+        <div className="flex justify-between flex-col mp:w-full">
+          <h1 className="text-2xl">Isaac Ojo </h1>
+          <p>
+            Hi, I’m Isaac Ojo, a fullstack developer with a knack for building
+            awesome web and mobile apps. I use node.js, next.js, react,
+            typescript, and react native to create solutions that are fast,
+            beautiful, and reliable. I love learning new things and tackling new
+            problems. I also enjoy working with other developers and sharing
+            what I know. Whether it’s a personal project or a professional one,
+            I always strive to deliver quality and value.
+          </p>
+          <div className="flex gap-2 mt-4">
+            <a
+              className="w-fit transition-all duration-300  hover:text-[#9caea1] cursor-pointer"
+              target="_blank"
+              href="https://github.com/elsierra"
+            >
+              Github
+              <div className="w-5  h-[2px] bg-black dark:bg-white" />
+            </a>
+            <a
+              className="w-fit transition-all duration-300  hover:text-[#9caea1] cursor-pointer"
+              target="_blank"
+              href="mailto:hojoisaac@gmail.com"
+            >
+              Email
+              <div className="w-5 h-[2px] bg-black dark:bg-white" />
+            </a>
+            <a
+              href="https://ojoisaac.me/api/cv"
+              className="w-fit transition-all duration-300  hover:text-[#9caea1] cursor-pointer"
+            >
               Get CV
-              <div className="w-5 h-[2px] bg-black dark:bg-white"/>
-            </button>
-            </div>
-          
+              <div className="w-5 h-[2px] bg-black dark:bg-white" />
+            </a>
           </div>
-          <ExpertiseList className="pc:hidden" />
-          <ExperienceList className="pc:hidden"/>
-      
+        </div>
+        <ExpertiseList className="pc:hidden" />
+        <ExperienceList className="pc:hidden" />
       </div>
       <ExpertiseList className="mp:hidden" />
-      <ExperienceList className="mp:hidden"/>
-     
+      <ExperienceList className="mp:hidden" />
     </AnimatedSection>
   );
 }
