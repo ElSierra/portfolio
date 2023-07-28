@@ -3,6 +3,7 @@ import "./overflow.css";
 import AnimatedSection from "../AnimateSection";
 import { prisma } from "../../../../lib/prisma";
 
+export const revalidate = 1; 
 export default async function PersonalProjects() {
   const getProjects = async () => {
     const projectData = await prisma.personalProjects.findMany({
