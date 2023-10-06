@@ -1,5 +1,5 @@
 import { NotableExperiences } from "@prisma/client";
-
+import React from "react";
 
 export default function Learning() {
   return (
