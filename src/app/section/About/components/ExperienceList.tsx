@@ -1,4 +1,4 @@
-import React from "react";
+
 import Experience from "./Experience";
 import { prisma } from "../../../../../lib/prisma";
 import { NotableExperiences } from "@prisma/client";
