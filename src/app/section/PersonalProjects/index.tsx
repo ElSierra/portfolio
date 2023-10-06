@@ -3,9 +3,9 @@ import "./overflow.css";
 import AnimatedSection from "../AnimateSection";
 import { prisma } from "../../../../lib/prisma";
 
-export const revalidate = 800
 export default async function PersonalProjects() {
   const getProjects = async () => {
+    try{
     const projectData = await prisma.personalProjects.findMany({
       include: {
         projectTags: {
@@ -23,8 +23,12 @@ export default async function PersonalProjects() {
         createdAt: "desc",
       },
     });
+    console.log("🚀 ~ file: index.tsx:26 ~ getProjects ~ projectData:", projectData)
 
-    return projectData;
+    return projectData;}
+    catch(e){
+      return []
+    }
   };
 
   const projectData = await getProjects();
@@ -39,7 +43,7 @@ export default async function PersonalProjects() {
       </div>
       <div className="overflow-y-scroll masked-overflow no-scrollbar h-full">
         <div className="grid grid-cols-2  gap-4 mpX:grid-cols-1 ">
-          {projectData.map((project) => (
+          {projectData.map((project:any) => (
             <Card
               {...project}
               projectTags={project.projectTags}

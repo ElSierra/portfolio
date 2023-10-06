@@ -6,6 +6,12 @@ export type TimelineData = {
   subtitle: string;
 }[];
 
-export interface IpersonalProject extends PersonalProjects {
+export interface IpersonalProject {
   projectTags: { tags: { id: string; title: string } }[];
+  imageUri: string;
+  title: string;
+  desc: string;
+  subtitle: string;
+  sourceCode: string;
+  livePreviewLink: string;
 }

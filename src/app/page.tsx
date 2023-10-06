@@ -5,7 +5,7 @@ import PersonalProjects from "./section/PersonalProjects";
 import GoUp from "./components/global/GoUp";
 import Resume from "./section/Resume";
 import Contact from "./section/Contact";
-export const revalidate = 800;
+
 export default async function Home() {
   return (
     <main className="min-h-screen pl-[5vw] mp:pl-[8vw] h-screen mp:p-0 scroll-smooth overflow-auto snap-y items-center dark:text-white ">
