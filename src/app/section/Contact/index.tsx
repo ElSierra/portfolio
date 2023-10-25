@@ -3,6 +3,7 @@ import AnimatedSection from "../AnimateSection";
 import { TwitterLogo } from "@/app/components/logos";
 import { BsTwitter, BsGithub, BsLinkedin } from "react-icons/bs";
 import { BiLogoGmail } from "react-icons/bi";
+import { FaXTwitter } from "react-icons/fa6";
 export default function Contact() {
   return (
     <AnimatedSection id="contact" className="justify-between">
@@ -19,7 +20,7 @@ export default function Contact() {
             className="transition-colors duration-300 hover:text-[#1c96e8]"
           >
             <li>
-              <BsTwitter />
+              <FaXTwitter />
             </li>
           </a>
           <a
