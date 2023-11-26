@@ -4,9 +4,9 @@ export default function page() {
   return (
     <div className="min-h-screen flex items-center justify-center">
       <div className="p-6 rounded-md shadow-md">
-        <h1 className="text-2xl font-bold mb-4">Pirate's Guess Privacy Policy</h1>
+        <h1 className="text-2xl font-bold mb-4">Pirate&apos;s Guess Privacy Policy</h1>
         <p className="mb-4">
-          Pirate's Guess is a game that does not collect any user data. We respect your privacy
+          Pirate&apos;s Guess is a game that does not collect any user data. We respect your privacy
           and do not store any personal information.
         </p>
         <p className="mb-4">
