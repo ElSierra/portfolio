@@ -11,11 +11,11 @@ export const hats = [
 
 export const lang = [
   "React.js",
-
   "Next.js",
-
+  "Go",
   "React Native",
   "Typescript",
   "Node.js",
-  "Flutter & Dart",
+  "Echo Go",
+  "Express.js",
 ];
