@@ -20,8 +20,10 @@ model PersonalProjects {
   title           String
   subtitle        String?
   livePreviewLink String?
+  youtubeLink     String?
   sourceCode      String
   imageUri        String
+  mobileImageUri  String?
   desc            String
   projectTags     ProjectTagsOnPersonalProject[]
   createdAt       DateTime                       @default(now())

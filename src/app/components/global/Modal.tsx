@@ -1,17 +1,21 @@
 import { Dialog, Transition } from "@headlessui/react";
 import { Fragment, useState } from "react";
 import Image from "next/image";
-
+import YouTube from "react-youtube";
 export default function Modal({
   isOpen,
   imageUri,
   openModal,
   closeModal,
+  mobileImageUri,
+  youtubeLink
 }: {
   isOpen: boolean;
   imageUri: string;
   openModal: () => void;
   closeModal: () => void;
+  mobileImageUri?: string;
+  youtubeLink?: string;
 }) {
   return (
     <>
@@ -40,18 +44,38 @@ export default function Modal({
                 leaveFrom="opacity-100 scale-100"
                 leaveTo="opacity-0 scale-95"
               >
-                <Dialog.Panel className="w-full max-w-[80%] h-[80vh] transform overflow-hidden rounded-2xl dark:bg-[#262626] bg-white p-6 text-left align-middle shadow-xl transition-all">
-                  <div className="mt-2">
-                    
+                {!youtubeLink ?<Dialog.Panel className="w-full max-w-[80%] h-[80vh] transform overflow-hidden rounded-2xl dark:bg-[#262626] bg-white p-6 text-left align-middle shadow-xl transition-all">
+                  <>
+                    <div className="mt-2 sm:flex hidden">
+                      
+                        <Image
+                          src={imageUri}
+                          alt={""}
+                          style={{ objectFit: "cover", borderRadius: "10px" }}
+                          fill
+                        />
+                      </div>
+                      <div className="mt-2 sm:hidden flex">
+                      
                       <Image
-                        src={imageUri}
+                        src={mobileImageUri || imageUri}
                         alt={""}
                         style={{ objectFit: "cover", borderRadius: "10px" }}
                         fill
                       />
                     </div>
+                  </>
                   
-                </Dialog.Panel>
+                </Dialog.Panel> :    <Dialog.Panel className="w-full max-w-[80%] h-[80vh] transform overflow-hidden rounded-2xl dark:bg-[#262626] bg-white  text-left align-middle shadow-xl transition-all">
+                  <div className=" h-full w-full">
+                    <YouTube
+                      videoId={youtubeLink} // defaults -> ''
+                      id={"0"} // defaults -> ''
+                      className={"w-full h-full"} // defaults -> ''
+                      iframeClassName={"w-full h-full"} // defaults -> ''
+                    />
+                  </div>
+                </Dialog.Panel>}
               </Transition.Child>
             </div>
           </div>
