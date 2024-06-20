@@ -50,7 +50,7 @@ export default function About() {
               <div className="w-5 h-[2px] bg-black dark:bg-white" />
             </a>
             <a
-              href="/api/cv"
+              href="/IsaacOjo.pdf"
               className="w-fit transition-all duration-300  hover:text-[#9caea1] cursor-pointer"
             >
               Get CV

@@ -44,6 +44,15 @@ export default function Main() {
           </h1>
           <TypeWriter hats={hats} />
           <LanguageAnimate language={lang} />
+          <div>
+            <a
+              href="/IsaacOjo.pdf"
+              className="w-fit text-lg font-bold transition-all duration-300  hover:text-[#9caea1] cursor-pointer"
+            >
+             My Resume
+              <div className="w-14 h-[2px] bg-black dark:bg-white" />
+            </a>
+          </div>
         </div>
       </div>
     </AnimatedSection>
