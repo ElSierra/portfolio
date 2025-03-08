@@ -4,6 +4,8 @@ import { TwitterLogo } from "@/app/components/logos";
 import { BsTwitter, BsGithub, BsLinkedin } from "react-icons/bs";
 import { BiLogoGmail } from "react-icons/bi";
 import { FaXTwitter } from "react-icons/fa6";
+import Image from "next/image";
+import me from "@/app/assets/me.svg";
 export default function Contact() {
   return (
     <AnimatedSection id="contact" className="justify-between">
@@ -49,15 +51,20 @@ export default function Contact() {
           </a>
         </ul>
       </div>
-  
-        <div className="flex mp:mb-[80px] pc:mb-[50px] items-center  justify-between w-full ">
-          <div className="border-2 border-black p-1 rounded-md dark:border-white">
-            <h1 className={`text-3xl font-extrabold  dark:text-white`}>IOI</h1>
-          </div>
-          <p>
-            coded by <span className="font-bold">me</span>
-          </p>
-     
+
+      <div className="flex mp:mb-[80px] pc:mb-[50px] items-center  justify-between w-full ">
+        <div className="">
+          <Image
+            src={me}
+            alt="Isaac Ojo"
+            width={100}
+            height={100}
+            className="rounded-full"
+          />
+        </div>
+        <p>
+          Developed by <span className="font-bold">me</span>
+        </p>
       </div>
     </AnimatedSection>
   );

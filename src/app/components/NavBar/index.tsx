@@ -1,5 +1,5 @@
 import Image from "next/image";
-import pic from "@/app/assets/zik.png";
+import pic from "@/app/assets/me.svg";
 import Link from "next/link";
 import { Poppins } from "next/font/google";
 
@@ -11,7 +11,12 @@ export default function NavBar() {
         <h1 className={`text-3xl font-extrabold  dark:text-white`}>{"ioi"}</h1>
       </div>
       <Link href={"#about"}>
-        <div className="relative h-20 w-20 transition-all duration-300 hover:h-10">
+        <div
+          className="relative h-20 w-20 transition-all duration-300 
+        
+        
+        hover:scale-110"
+        >
           <Image
             className="rounded-full "
             style={{ objectFit: "cover", borderRadius: "10px" }}
