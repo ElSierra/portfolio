@@ -1,7 +1,7 @@
 import Card from "./components/Card";
 import "./overflow.css";
 import AnimatedSection from "../AnimateSection";
-import { prisma } from "../../../../lib/prisma";
+
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 

@@ -1,4 +1,3 @@
-import { PersonalProjects, ProjectTags } from "@prisma/client";
 
 export type TimelineData = {
   dateRange: string;
@@ -6,6 +5,17 @@ export type TimelineData = {
   subtitle: string;
 }[];
 
-export interface IpersonalProject extends PersonalProjects {
+export interface IPersonalProject {
   projectTags: { tags: { id: string; title: string } }[];
+  id: string;
+  title: string;
+  subtitle: string | null;
+  livePreviewLink: string | null;
+  youtubeLink: string | null;
+  sourceCode: string;
+  imageUri: string;
+  mobileImageUri: string | null;
+  desc: string;
+  createdAt: Date;
+  updatedAt: Date;
 }

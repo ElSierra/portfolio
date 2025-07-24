@@ -1,25 +1,17 @@
+
 import React from "react";
-import Experience from "./Experience";
-import { prisma } from "../../../../../lib/prisma";
-import { NotableExperiences } from "@prisma/client";
+import { experienceList } from "@/app/data/experience";
+import { notableExperiences } from "@/app/data/notableExperiences";
 import Learning from "./CurrentlyLearning";
+import Experience from "./Experience";
 
 export default async function ExperienceList({
   className,
 }: {
   className: string;
 }) {
-  const getNotableExperiences = async () => {
-    try {
-      const notable = await prisma.notableExperiences.findMany({});
-
-      return notable;
-    } catch (e) {}
-  };
-
-  const notableExperiences = await getNotableExperiences();
-  let notable1: NotableExperiences[] = [];
-  let notable2: NotableExperiences[] = [];
+  let notable1 = [];
+  let notable2 = [];
 
   if (!notableExperiences) {
     return;

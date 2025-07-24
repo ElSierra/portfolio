@@ -1,34 +1,12 @@
 import Card from "./components/Card";
 import "./overflow.css";
 import AnimatedSection from "../AnimateSection";
-import { prisma } from "../../../../lib/prisma";
-
-export const revalidate = 800
+import { personalProjects } from "@/app/data/personalProjects";
+export const revalidate = 800;
 export default async function PersonalProjects() {
-  const getProjects = async () => {
-    const projectData = await prisma.personalProjects.findMany({
-      include: {
-        projectTags: {
-          select: {
-            tags: {
-              select: {
-                id: true,
-                title: true,
-              },
-            },
-          },
-        },
-      },
-      orderBy: {
-        createdAt: "desc",
-      },
-    });
 
-    return projectData;
-  };
+  const projectData = personalProjects
 
-  const projectData = await getProjects();
- 
   return (
     <AnimatedSection id="projects">
       <div className="flex w-full  justify-end">

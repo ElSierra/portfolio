@@ -1,6 +1,4 @@
-import { TimelineData } from "../../../types/types";
-
-export const educationList =[
+[
   {
     "id": "64c3bccf3efecf0dbaf370b4",
     "dateRange": "2021",

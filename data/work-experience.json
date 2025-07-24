@@ -1,6 +1,4 @@
-import { TimelineData } from "../../../types/types";
-
-export const experienceList = [
+[
   {
     "id": "6650b98c3002c8889150cdf6",
     "dateRange": "2023 - present",
