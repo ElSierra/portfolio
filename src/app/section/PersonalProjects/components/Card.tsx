@@ -2,9 +2,9 @@
 
 import Image from "next/image";
 import FrameworkTag from "./FrameworkTag";
-import { IpersonalProject } from "../../../../../types/types";
 import { useState } from "react";
 import Modal from "@/app/components/global/Modal";
+import { personalProjects } from "@/app/data/personalProjects";
 
 export default function Card({
   imageUri,
@@ -16,7 +16,7 @@ export default function Card({
   projectTags,
   youtubeLink,
   mobileImageUri,
-}: IpersonalProject) {
+}: typeof personalProjects[number]) {
   const [isOpen, setIsOpen] = useState(false);
 
   function closeModal() {

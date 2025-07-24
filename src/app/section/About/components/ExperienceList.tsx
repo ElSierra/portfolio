@@ -10,8 +10,8 @@ export default async function ExperienceList({
 }: {
   className: string;
 }) {
-  let notable1 = [];
-  let notable2 = [];
+  let notable1: typeof notableExperiences = [];
+  let notable2: typeof notableExperiences = [];
 
   if (!notableExperiences) {
     return;
