@@ -1,10 +1,10 @@
-import { NotableExperiences } from "@prisma/client";
 import React from "react";
+import type { notableExperiences } from "@/app/data/notableExperiences";
 
 export default function Experience({
   notable,
 }: {
-  notable: NotableExperiences[];
+  notable: typeof notableExperiences;
 }) {
   return (
     <div className="border-[1px] w-[33%] mp:w-full h-40 rounded-md p-4">
@@ -14,7 +14,9 @@ export default function Experience({
           <h1 className="text-md font-extrabold">Notable Experiences</h1>
           <div className="flex flex-col  masked-overflow-small no-scrollbar overflow-y-scroll ">
             {notable.map((notable) => (
-              <p key={notable.id} className="text-sm">{notable.title}</p>
+              <p key={notable.id} className="text-sm">
+                {notable.title}
+              </p>
             ))}
           </div>
         </div>
