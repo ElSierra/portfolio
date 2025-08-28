@@ -1,5 +1,56 @@
 
 export const personalProjects = [
+   {
+    "id": "6650bd42ae35e2f4461774a0",
+    "title": "Open2Swap",
+    "subtitle": null,
+    "livePreviewLink": "https://open2swap.com",
+    "youtubeLink": null,
+    "sourceCode": "#",
+    "imageUri": "https://firebasestorage.googleapis.com/v0/b/portfolio-7dba7.appspot.com/o/o2s-desk.png?alt=media&token=17855691-268e-41f8-900d-dcb117a7303c",
+    "mobileImageUri": "https://firebasestorage.googleapis.com/v0/b/portfolio-7dba7.appspot.com/o/o2s-mobile.png?alt=media&token=d89c7d68-1331-4e27-90ca-d17d0491c0e5",
+    "desc": "Open2Swap is a community marketplace where you can trade your stuff, swap devices, or find something new without stressing about buying and selling. It’s all about making it easy and fun to get what you need while giving what you don’t.",
+    "createdAt": "2024-05-24T16:16:02.371Z",
+    "updatedAt": "2024-05-24T16:16:02.371Z",
+    "projectTags": [
+      {
+        "tags": {
+          "id": "64c3068f6a61b2cc7806ee47",
+          "title": "Typescript"
+        }
+      },
+      {
+        "tags": {
+          "id": "64c2fbcb40834aba1b0022e7",
+          "title": "React"
+        }
+      },
+      {
+        "tags": {
+          "id": "64c3070e6a61b2cc7806ee4a",
+          "title": "Next.js"
+        }
+      },
+        {
+        "tags": {
+          "id": "677848775db5f20f62d8b2de",
+          "title": "Bun"
+        }
+      },
+      {
+        "tags": {
+          "id": "677848755db5f20f62d8b2de",
+          "title": "Drizzle"
+        }
+      },
+       {
+        "tags": {
+          "id": "677848755ddb5f20f62d8b2de",
+          "title": "Express.js"
+        }
+      },
+    ]
+  },
   {
     "id": "67784658bca3445ec0767529",
     "title": "Solana Wallet Tracker & Notifier",
