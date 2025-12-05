@@ -51,6 +51,40 @@ export const personalProjects = [
       },
     ]
   },
+    {
+    "id": "6650bd42ae34e2f4461774a0",
+    "title": "Pool Garden and Other things Web Page",
+    "subtitle": null,
+    "livePreviewLink": "https://poolgardenandotherthings.co.za",
+    "youtubeLink": null,
+    "sourceCode": "#",
+    "imageUri": "/pools.png",
+    "mobileImageUri": "/pools-mobile.png",
+    "desc": "A website for Pool Garden and Other Things, a company that specializes in pool maintenance and garden services in South Africa.",
+    "createdAt": "2024-05-24T16:16:02.371Z",
+    "updatedAt": "2024-05-24T16:16:02.371Z",
+    "projectTags": [
+      {
+        "tags": {
+          "id": "64c3068f6a61b2cc7806ee47",
+          "title": "Typescript"
+        }
+      },
+      {
+        "tags": {
+          "id": "64c2fbcb40834aba1b0022e7",
+          "title": "React"
+        }
+      },
+      {
+        "tags": {
+          "id": "64c3070e6a61b2cc7806ee4a",
+          "title": "Next.js"
+        }
+      },
+       
+    ]
+  },
   {
     "id": "67784658bca3445ec0767529",
     "title": "Solana Wallet Tracker & Notifier",
