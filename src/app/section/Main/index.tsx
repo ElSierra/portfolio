@@ -8,10 +8,13 @@ import cube from "./assets/icon6.png";
 import cuboid from "./assets/icon2.png";
 import "./iconAnimate.css";
 import AnimatedSection from "../AnimateSection";
+import DotMatrix from "@/app/components/global/DotMatrix";
 
 export default function Main() {
   return (
     <AnimatedSection id="home">
+      <DotMatrix className="right-8 top-16 mp:right-[-7rem] mp:top-24" />
+      <DotMatrix className="bottom-4 left-20 h-44 w-44 opacity-20 mp:left-[-5rem]" />
       <NavBar />
       <Image
         src={triangle}

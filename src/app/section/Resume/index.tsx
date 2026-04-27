@@ -4,11 +4,13 @@ import { educationList } from "@/app/data/educationList";
 import { experienceList } from "@/app/data/experience";
 import AnimatedSection from "../AnimateSection";
 import Timeline from "./components/Timeline";
+import TerminalPanel from "@/app/components/global/TerminalPanel";
 export default async function Resume() {
   const ed = educationList;
   const exp = experienceList;
   return (
     <AnimatedSection id="resume">
+
       <div className="flex w-full  justify-end">
         <div className="flex flex-col gap-2  items-end w-72">
           <h1 className="text-2xl font-extrabold">resume</h1>

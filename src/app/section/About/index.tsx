@@ -7,10 +7,12 @@ import ExpertiseList from "./components/ExpertiseList";
 
 import ExperienceList from "./components/ExperienceList";
 import MyPicture from "./components/MyPicture";
+import DotMatrix from "@/app/components/global/DotMatrix";
 export default function About() {
 
   return (
     <AnimatedSection id="about" className="gap-8">
+      <DotMatrix className="right-12 top-28 h-56 w-56 opacity-20 mp:right-[-6rem]" />
       <div className="flex w-full justify-start">
         <div className="flex flex-col gap-2 w-72">
           <h1 className="text-2xl font-extrabold">about me</h1>

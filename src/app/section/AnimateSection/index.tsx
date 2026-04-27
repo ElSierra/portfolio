@@ -2,7 +2,6 @@
 
 import { motion, useAnimation } from "framer-motion";
 
-import { useInView } from "react-intersection-observer";
 import { ReactNode, useEffect, useState } from "react";
 const boxVariant = {
   visible: { opacity: 1 },
@@ -12,11 +11,11 @@ const boxVariant = {
 export default function AnimatedSection({
   id,
   children,
-  className,
+  className = "",
 }: {
   id: string;
   children: ReactNode;
-  className?: string
+  className?: string;
 }) {
   const control = useAnimation();
 
@@ -54,10 +53,9 @@ export default function AnimatedSection({
       initial="hidden"
       animate={control}
       id={id}
-      className={`h-[100vh] snap-start flex flex-col w-full items-center px-28 mp:p-8 pc:pt-5 ${className}`}
+      className={`relative isolate h-[100vh] snap-start flex flex-col w-full items-center px-28 mp:p-8 pc:pt-5 ${className}`}
     >
       {children}
-      
     </motion.section>
   );
 }

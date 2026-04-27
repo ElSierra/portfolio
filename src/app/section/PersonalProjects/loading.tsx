@@ -1,9 +1,6 @@
-import Card from "./components/Card";
 import "./overflow.css";
 import AnimatedSection from "../AnimateSection";
-
-import Skeleton from "react-loading-skeleton";
-import "react-loading-skeleton/dist/skeleton.css";
+import { Skeleton } from "@/app/components/ui/skeleton";
 
 export default  function PersonalProjects() {
   
@@ -17,8 +14,8 @@ export default  function PersonalProjects() {
       </div>
       <div className="overflow-y-scroll masked-overflow no-scrollbar h-full">
         <div className="grid grid-cols-2  gap-4 mp:grid-cols-1 ">
-          <Skeleton height={200}/>
-          <Skeleton height={200} />
+          <Skeleton className="h-[200px] w-full" />
+          <Skeleton className="h-[200px] w-full" />
         </div>
         <div className="flex justify-center w-full">
           <button className="p-4 transition-all duration-300  hover:text-[#9caea1] cursor-pointer">
