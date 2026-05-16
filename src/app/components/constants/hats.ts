@@ -16,6 +16,5 @@ export const lang = [
   "React Native",
   "Typescript",
   "Node.js",
-  "Echo Go",
-  "Express.js",
+  "Bun.js",
 ];

@@ -1,7 +1,31 @@
 export const notableExperiences = [
   {
+    id: "64c3c93bf6778a52500aca91",
+    title: "Go",
+    createdAt: "2023-07-28T13:57:14.289Z",
+    updatedAt: "2023-07-28T13:57:14.289Z",
+  },
+  {
+    id: "64c3c93bf6778a52500aca92",
+    title: "Gin",
+    createdAt: "2023-07-28T13:57:14.289Z",
+    updatedAt: "2023-07-28T13:57:14.289Z",
+  },
+  {
+    id: "64c3c93bf6778a52500aca93",
+    title: "REST APIs",
+    createdAt: "2023-07-28T13:57:14.289Z",
+    updatedAt: "2023-07-28T13:57:14.289Z",
+  },
+  {
+    id: "64c3c93bf6778a52500aca94",
+    title: "gRPC",
+    createdAt: "2023-07-28T13:57:14.289Z",
+    updatedAt: "2023-07-28T13:57:14.289Z",
+  },
+  {
     id: "64c3c93bf6778a52500aca89",
-    title: "Firebase",
+    title: "PostgreSQL",
     createdAt: "2023-07-28T13:57:14.289Z",
     updatedAt: "2023-07-28T13:57:14.289Z",
   },
@@ -18,14 +42,8 @@ export const notableExperiences = [
     updatedAt: "2023-07-28T13:57:14.289Z",
   },
   {
-    id: "64c3c93bf6778a52500aca8c",
-    title: "ChakraUI",
-    createdAt: "2023-07-28T13:57:14.289Z",
-    updatedAt: "2023-07-28T13:57:14.289Z",
-  },
-  {
     id: "64c3c93bf6778a52500aca8d",
-    title: "Tailwind css",
+    title: "Tailwind CSS",
     createdAt: "2023-07-28T13:57:14.289Z",
     updatedAt: "2023-07-28T13:57:14.289Z",
   },
@@ -36,8 +54,38 @@ export const notableExperiences = [
     updatedAt: "2023-07-28T13:57:14.289Z",
   },
   {
-    id: "64c3c93bf6778a52500aca8f",
-    title: "React Paper",
+    id: "64c3c93bf6778a52500aca95",
+    title: "TypeScript",
+    createdAt: "2023-07-28T13:57:14.289Z",
+    updatedAt: "2023-07-28T13:57:14.289Z",
+  },
+  {
+    id: "64c3c93bf6778a52500aca96",
+    title: "Next.js",
+    createdAt: "2023-07-28T13:57:14.289Z",
+    updatedAt: "2023-07-28T13:57:14.289Z",
+  },
+  {
+    id: "64c3c93bf6778a52500aca97",
+    title: "TanStack Query",
+    createdAt: "2023-07-28T13:57:14.289Z",
+    updatedAt: "2023-07-28T13:57:14.289Z",
+  },
+  {
+    id: "64c3c93bf6778a52500aca98",
+    title: "Zustand",
+    createdAt: "2023-07-28T13:57:14.289Z",
+    updatedAt: "2023-07-28T13:57:14.289Z",
+  },
+  {
+    id: "64c3c93bf6778a52500aca99",
+    title: "Expo",
+    createdAt: "2023-07-28T13:57:14.289Z",
+    updatedAt: "2023-07-28T13:57:14.289Z",
+  },
+  {
+    id: "64c3c93bf6778a52500aca9a",
+    title: "React Navigation",
     createdAt: "2023-07-28T13:57:14.289Z",
     updatedAt: "2023-07-28T13:57:14.289Z",
   },
@@ -47,4 +95,35 @@ export const notableExperiences = [
     createdAt: "2023-07-28T13:57:14.289Z",
     updatedAt: "2023-07-28T13:57:14.289Z",
   },
+  {
+    id: "64c3c93bf6778a52500aca9b",
+    title: "NativeWind",
+    createdAt: "2023-07-28T13:57:14.289Z",
+    updatedAt: "2023-07-28T13:57:14.289Z",
+  },
+  {
+    id: "64c3c93bf6778a52500aca9c",
+    title: "JWT Auth",
+    createdAt: "2023-07-28T13:57:14.289Z",
+    updatedAt: "2023-07-28T13:57:14.289Z",
+  },
+  {
+    id: "64c3c93bf6778a52500aca9d",
+    title: "Docker",
+    createdAt: "2023-07-28T13:57:14.289Z",
+    updatedAt: "2023-07-28T13:57:14.289Z",
+  },
+  {
+    id: "64c3c93bf6778a52500aca9e",
+    title: "CI/CD",
+    createdAt: "2023-07-28T13:57:14.289Z",
+    updatedAt: "2023-07-28T13:57:14.289Z",
+  },
+  {
+    id: "64c3c93bf6778a52500aca9f",
+    title: "Vitest",
+    createdAt: "2023-07-28T13:57:14.289Z",
+    updatedAt: "2023-07-28T13:57:14.289Z",
+  },
+ 
 ];
