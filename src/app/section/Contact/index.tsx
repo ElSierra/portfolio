@@ -1,18 +1,13 @@
-import "./overflow.css";
-import AnimatedSection from "../AnimateSection";
-import { TwitterLogo } from "@/app/components/logos";
-import { BsTwitter, BsGithub, BsLinkedin } from "react-icons/bs";
-import { BiLogoGmail } from "react-icons/bi";
-import { FaXTwitter } from "react-icons/fa6";
-import Image from "next/image";
 import me from "@/app/assets/me.svg";
-import DotMatrix from "@/app/components/global/DotMatrix";
-import TerminalPanel from "@/app/components/global/TerminalPanel";
+import Image from "next/image";
+import { BiLogoGmail } from "react-icons/bi";
+import { BsGithub, BsLinkedin } from "react-icons/bs";
+import { FaXTwitter } from "react-icons/fa6";
+import AnimatedSection from "../AnimateSection";
+import "./overflow.css";
 export default function Contact() {
   return (
     <AnimatedSection id="contact" className="justify-between">
-      <DotMatrix className="left-16 top-20 h-52 w-52 opacity-20 mp:left-[-6rem]" />
-    
       <div className="flex w-full gap-14 flex-col items-center justify-center h-full">
         <div className="flex w-full  justify-center">
           <div className="flex flex-col gap-2  items-center w-72">

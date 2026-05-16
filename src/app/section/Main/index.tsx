@@ -1,20 +1,17 @@
 import { hats, lang } from "@/app/components/constants/hats";
+import LanguageAnimate from "@/app/components/global/LanguageAnimate";
 import TypeWriter from "@/app/components/global/TypeWriter";
 import NavBar from "@/app/components/NavBar";
-import LanguageAnimate from "@/app/components/global/LanguageAnimate";
 import Image from "next/image";
-import triangle from "./assets/icon1.png";
-import cube from "./assets/icon6.png";
-import cuboid from "./assets/icon2.png";
-import "./iconAnimate.css";
 import AnimatedSection from "../AnimateSection";
-import DotMatrix from "@/app/components/global/DotMatrix";
+import triangle from "./assets/icon1.png";
+import cuboid from "./assets/icon2.png";
+import cube from "./assets/icon6.png";
+import "./iconAnimate.css";
 
 export default function Main() {
   return (
     <AnimatedSection id="home">
-      <DotMatrix className="right-8 top-16 mp:right-[-7rem] mp:top-24" />
-      <DotMatrix className="bottom-4 left-20 h-44 w-44 opacity-20 mp:left-[-5rem]" />
       <NavBar />
       <Image
         src={triangle}
@@ -52,7 +49,7 @@ export default function Main() {
               href="/IsaacOjo.pdf"
               className="w-fit text-lg font-bold transition-all duration-300  hover:text-[#9caea1] cursor-pointer"
             >
-             My Resume
+              My Resume
               <div className="w-14 h-[2px] bg-black dark:bg-white" />
             </a>
           </div>

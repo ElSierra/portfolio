@@ -53,7 +53,7 @@ export default function AnimatedSection({
       initial="hidden"
       animate={control}
       id={id}
-      className={`relative isolate h-[100vh] snap-start flex flex-col w-full items-center px-28 mp:p-8 pc:pt-5 ${className}`}
+      className={`relative isolate h-[100vh] snap-start flex flex-col w-full items-center  px-28 mp:p-8 pc:pt-5 ${className}`}
     >
       {children}
     </motion.section>
