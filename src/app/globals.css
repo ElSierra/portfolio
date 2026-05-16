@@ -31,9 +31,6 @@ body {
   html {
     -webkit-tap-highlight-color: transparent;
   }
-  * {
-    outline: 2px solid red !important;
-  }
 }
 
 @layer utilities {
