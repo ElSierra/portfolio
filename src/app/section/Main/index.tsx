@@ -2,38 +2,44 @@ import { hats, lang } from "@/app/components/constants/hats";
 import LanguageAnimate from "@/app/components/global/LanguageAnimate";
 import TypeWriter from "@/app/components/global/TypeWriter";
 import NavBar from "@/app/components/NavBar";
-import Image from "next/image";
+import {
+  SiBun,
+  SiGo,
+  SiNodedotjs,
+  SiPostgresql,
+  SiReact,
+  SiTypescript,
+} from "react-icons/si";
 import AnimatedSection from "../AnimateSection";
-import triangle from "./assets/icon1.png";
-import cuboid from "./assets/icon2.png";
-import cube from "./assets/icon6.png";
 import "./iconAnimate.css";
-
 export default function Main() {
   return (
-    <AnimatedSection id="home">
+    <AnimatedSection className="relative" id="home">
       <NavBar />
-      <Image
-        src={triangle}
-        alt=""
-        height={30}
-        width={30}
-        className="animate-icon absolute top-20 mp:top-40 z-50 left-80"
-      />
-      <Image
-        src={cube}
-        alt=""
-        height={30}
-        width={30}
-        className="animate-icon absolute top-20 z-50  mp:top-40 right-80"
-      />
 
-      <Image
-        src={cuboid}
-        alt=""
-        height={30}
-        width={30}
-        className="animate-icon absolute bottom-20 z-50  mp:bottom-40 left-80"
+      <SiBun
+        className="animate-icon absolute z-50 top-[30%] left-[5%] mp:top-[22%] mp:left-[3%]"
+        size={30}
+      />
+      <SiTypescript
+        className="animate-icon absolute z-50 top-[30%] right-[5%] mp:top-[22%] mp:right-[3%]"
+        size={30}
+      />
+      <SiReact
+        className="animate-icon absolute z-50 bottom-[30%] right-[5%] mp:bottom-[22%] mp:right-[3%]"
+        size={30}
+      />
+      <SiGo
+        className="animate-icon absolute z-50 bottom-[30%] left-[5%] mp:bottom-[22%] mp:left-[3%]"
+        size={30}
+      />
+      <SiNodedotjs
+        className="animate-icon absolute z-50 top-[8%] left-1/2 mp:top-[5%]"
+        size={30}
+      />
+      <SiPostgresql
+        className="animate-icon absolute z-50 bottom-[8%] left-1/2  mp:bottom-[5%]"
+        size={30}
       />
       <div className="flex flex-row  w-full h-[70%]">
         <div
